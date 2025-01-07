@@ -8,7 +8,8 @@ import DatasetCard from "./DatasetCard";
 import APITransport from "../../../../redux/actions/apitransport/apitransport";
 import { useDispatch, useSelector } from "react-redux";
 import GetDatasetsAPI from "../../../../redux/actions/api/Dataset/GetDatasetList";
-import { Link, useNavigate, useParams } from "react-router-dom";
+// import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import CustomButton from "../../component/common/Button";
 import Spinner from "../../component/common/Spinner";
 import DatasetStyle from "../../../styles/Dataset";
@@ -41,7 +42,7 @@ export default function DatasetList() {
 
   useEffect(() => {
     getDashboardprojectData();
-  }, [selectedFilters]);
+  });
 
   const handleProjectlist = () => {
     setRadiobutton(true);

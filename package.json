@@ -91,5 +91,10 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  
+    "resolutions": {
+      "@ai4bharat/indic-transliterate/react": "18.2.0"
+    }
+  
 }
